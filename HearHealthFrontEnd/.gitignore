@@ -1,0 +1,50 @@
+# Dependencies & Modules
+node_modules/
+.bundle/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+.xcode.env.local
+
+# OS & Temp Files
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.metro-health-check*
+NUL
+nul
+
+# Android Build & Local Config
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/.cxx/
+android/app/.cxx/
+*.keystore
+!debug.keystore
+.kotlin/
+
+# iOS Build & CocoaPods
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace
+ios/*.xcodeproj/xcuserdata/
+ios/*.hmap
+ios/*.ipa
+ios/*.xcuserstate
+
+# IDE & Editor Config
+.idea/
+.vscode/
+*.iml
+*.hprof
+
+# Build Artifacts & Testing
+*.jsbundle
+/coverage/

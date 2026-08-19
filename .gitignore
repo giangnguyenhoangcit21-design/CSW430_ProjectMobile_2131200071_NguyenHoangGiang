@@ -1,0 +1,63 @@
+# ==========================================
+# Heart Health Project - Root .gitignore
+# ==========================================
+
+# Environment Variables & Secret Files
+.env
+.env.*
+!.env.example
+*.env
+
+# Operating System & Temp Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+NUL
+nul
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+
+# ==========================================
+# Frontend (React Native & Node.js)
+# ==========================================
+**/node_modules/
+**/HearHealthFrontEnd/node_modules/
+**/HearHealthFrontEnd/.bundle/
+**/HearHealthFrontEnd/android/build/
+**/HearHealthFrontEnd/android/app/build/
+**/HearHealthFrontEnd/android/.gradle/
+**/HearHealthFrontEnd/android/local.properties
+**/HearHealthFrontEnd/android/.cxx/
+**/HearHealthFrontEnd/ios/Pods/
+**/HearHealthFrontEnd/ios/build/
+**/HearHealthFrontEnd/ios/DerivedData/
+**/HearHealthFrontEnd/coverage/
+**/HearHealthFrontEnd/.metro-health-check*
+**/*.jsbundle
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# Backend (Spring Boot & Java Maven)
+# ==========================================
+**/target/
+**/HeartHealthBackEnd/target/
+**/HeartHealthBackEnd/bin/
+**/HeartHealthBackEnd/out/
+**/HeartHealthBackEnd/.apt_generated
+**/HeartHealthBackEnd/.classpath
+**/HeartHealthBackEnd/.factorypath
+**/HeartHealthBackEnd/.project
+**/HeartHealthBackEnd/.settings
+**/HeartHealthBackEnd/.sts4-cache
+*.jar
+*.war

@@ -1,0 +1,48 @@
+# Build Outputs
+target/
+build/
+bin/
+out/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Logs & Temp Files
+*.log
+*.tmp
+HELP.md
+
+# Package Archives
+*.jar
+*.war
+
+# OS Files
+.DS_Store
+Thumbs.db
+NUL
+nul
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA / VS Code
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/

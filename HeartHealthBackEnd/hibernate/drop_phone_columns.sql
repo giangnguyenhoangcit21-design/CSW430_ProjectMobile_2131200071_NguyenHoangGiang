@@ -1,0 +1,2 @@
+ALTER TABLE users DROP COLUMN phone;
+ALTER TABLE otp_tokens DROP COLUMN phone;
