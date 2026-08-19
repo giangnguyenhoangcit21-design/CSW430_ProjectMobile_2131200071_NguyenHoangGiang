@@ -30,9 +30,9 @@ const TriageScreen = ({ route, navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={{flexGrow: 1, justifyContent: 'center'}}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
         <View style={styles.card}>
-          
+
           {/* Risk Indicator */}
           <View style={styles.indicatorWrapper}>
             <View style={[styles.glowRing, { backgroundColor: glowBg, borderColor: glowBorder }]}>
@@ -46,7 +46,7 @@ const TriageScreen = ({ route, navigation }) => {
           </View>
 
           <Text style={styles.title}>{lang === 'EN' ? 'Assessment Completed!' : 'Hoàn tất đánh giá!'}</Text>
-          
+
           <Text style={styles.subtitle}>
             {displaySubtitle}
           </Text>
@@ -67,7 +67,7 @@ const TriageScreen = ({ route, navigation }) => {
           </View>
 
           {/* Action Button */}
-          <TouchableOpacity 
+          <TouchableOpacity
             style={styles.actionBtn}
             onPress={() => navigation.reset({
               index: 0,
