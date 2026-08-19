@@ -106,10 +106,11 @@ const ScreeningScreen = ({ route, navigation }) => {
     } else {
       setIsSubmitting(true);
       try {
-        const phone = undefined;
-        
+        const storedEmail = await AsyncStorage.getItem('userEmail');
+        const email = route?.params?.email || storedEmail;
+
         const payload = {
-          phone: phone,
+          email: email ? email.trim() : "",
           fullName,
           age,
           gender,
